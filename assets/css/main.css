@@ -1,0 +1,89 @@
+:root {
+    --camel: #FFAC13;
+    --orange: #FF6C0B;
+    --turquiose: #0DA9A3;
+}
+
+body {
+    font-family: "Comfortaa", "Marmelad", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: var(--camel);
+    color: white;
+}
+img {
+    max-width: 100%;
+}
+
+@media (min-width: 428px) {
+    .carousel {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .carousel {
+        width: 50%;
+    }
+}
+
+
+.sales-slide, .message {
+    background-color: var(--turquiose);
+    color: white;
+    height: 250px;
+    border-radius: 5rem;
+}
+
+.food {
+    padding-top: 200px;
+}
+.food-category {
+    background-color: var(--camel);
+}
+.food-category:hover {
+    background-color: var(--camel);
+    opacity: .5;
+}
+.food-category:active, .food-category:visited {
+    background-color: var(--camel);
+    opacity: .75;
+}
+.food-description, .btn, .sales-description {
+    font-family: "Marmelad", sans-serif;
+    font-weight: 400;
+}
+
+
+.food-price, .basket-price {
+    color: var(--orange);
+}
+.food-basket, .basket-count, .basket-order {
+    background-color: var(--turquiose);
+    color: white;
+    border-radius: 10rem;
+}
+
+
+.food-basket:hover, .basket-order:hover{
+    background-color: var(--turquiose);
+    opacity: .5;
+}
+.food-basket:active, .food-basket:visited, .basket-order:active, .basket-order:visited  {
+    background-color: var(--turquiose);
+    opacity: .75;
+}
+
+
+
